@@ -1,0 +1,349 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base HTML and Body Styling */
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc;
+}
+
+/* Main Page Container */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right, #f0faff, #f9f0ff, #ffedf0);
+    min-height: 100vh;
+    width: 100%;
+    padding: 2rem 1rem;
+}
+
+/* Page Title */
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1a202c;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Search Section */
+.search-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    width: 100%;
+    max-width: 650px;
+}
+
+/* Input Group */
+.search-inputs {
+    display: flex;
+    flex: 1;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Search Input */
+.search-input {
+    flex: 1;
+    min-width: 200px;
+    border: 1px solid #cbd5e0;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.search-input:focus {
+    border-color: #3b82f6;
+    outline: none;
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+}
+
+/* Search Button */
+.search-button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.search-button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Notification Dropdown */
+.notification-dropdown {
+    position: relative;
+    margin-left: auto;
+}
+
+.notification-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    color: #1a202c;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.notification-button:hover {
+    color: #2563eb;
+}
+
+.notification-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 90vw;
+    max-width: 400px;
+    height: 50vh;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 20;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+}
+
+.dropdown-header {
+    padding: 0.75rem;
+    background-color: #f7f9fc;
+    font-weight: bold;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.dropdown-content {
+    max-height: calc(50vh - 3rem);
+    overflow-y: auto;
+}
+
+.dropdown-item {
+    padding: 0.75rem;
+    border-bottom: 1px solid #f1f5f9;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f9ff;
+}
+
+.view-all-link {
+    padding: 0.75rem;
+    display: block;
+    text-align: center;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.view-all-link:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Grid */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+/* Events Grid */
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+}
+
+/* Event Card */
+.event-card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Event Name */
+.event-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1a202c;
+    margin-bottom: 0.5rem;
+}
+
+/* Event Date */
+.event-date {
+    font-size: 0.875rem;
+    color: #718096;
+    margin-bottom: 1rem;
+}
+
+/* Action Buttons */
+.event-actions {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.75rem;
+}
+
+/* View Button */
+.view-button {
+    background-color: #10b981;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.375rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-button:hover {
+    background-color: #059669;
+}
+
+/* Delete Button */
+.delete-button {
+    background-color: #ef4444;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.375rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+    background-color: #dc2626;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+    .search-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-inputs {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .search-button {
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        width: 100%;
+        left: 0;
+        max-width: none;
+    }
+}
+
+
+/* Attendee Form Input */
+.form-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.75rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+}
+
+/* Attendee Form Buttons */
+.submit-attendee-button,
+.cancel-attendee-button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+/* Submit Button */
+.submit-attendee-button {
+    background-color: #10b981;
+    color: white;
+}
+
+.submit-attendee-button:hover {
+    background-color: #059669;
+    transform: translateY(-2px);
+}
+
+/* Cancel Button */
+.cancel-attendee-button {
+    background-color: #f87171;
+    color: white;
+    margin-left: 0.5rem;
+}
+
+.cancel-attendee-button:hover {
+    background-color: #dc2626;
+    transform: translateY(-2px);
+}
+
+/* Wrapping container for better spacing (optional) */
+.attendee-form-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.add-attendee-button{
+    padding: 2px;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}

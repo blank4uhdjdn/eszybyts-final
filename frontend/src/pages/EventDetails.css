@@ -1,0 +1,72 @@
+.loading {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    align-items: center;
+    height: 100vh;
+    color: #4A5568; /* Gray color */
+}
+
+.event-details-container {
+    max-width: 800px;
+    margin-top: 50px;
+    padding: 24px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.event-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(to right, #ec4899, #f472b6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 16px;
+}
+
+.event-date {
+    font-size: 1.25rem;
+    color: #4A5568; /* Gray color */
+    margin-bottom: 8px;
+}
+
+.event-description {
+    font-size: 1rem;
+    color: #2D3748; /* Darker gray color */
+    margin-bottom: 16px;
+}
+
+.event-location {
+    font-size: 1rem;
+    color: #2D3748; /* Darker gray color */
+    margin-bottom: 16px;
+}
+
+.attendees-container {
+    background-color: #F7FAFC; /* Light gray background */
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.attendees-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1A202C; /* Dark gray color */
+    margin-bottom: 12px;
+}
+
+.attendees-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.attendee-item {
+    color: #4A5568; /* Gray color */
+}
+
+.no-attendees {
+    color: #A0AEC0; /* Light gray color */
+}
